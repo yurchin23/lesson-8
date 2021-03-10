@@ -30,7 +30,7 @@ tags = {
 }
 
 
-resource "aws_security_group" "homework" {                           # Amazon Security Group
+resource "aws_security_group" "homework" {                            # Amazon Security Group
   name        = "WebServer Security Group"
   description = "Allow Port 8080 TCP inbound traffic"
 
