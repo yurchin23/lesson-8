@@ -21,7 +21,7 @@ resource "aws_instance" "homework" {                                  # Amazon I
   instance_type             =   "t2.micro"                            # Tariff type
   vpc_security_group_ids    =   [aws_security_group.homework.id]      # Dependenc Instance and Security Group
   user_data                 =   file("jenkinsInstall.sh")             # Script for Jenkins extension 
-  key_name                  =   "main_ssh"			                      # SSH KEY
+  key_name                  =   "main_ssh"			      # SSH KEY
   connection {                                                        # SSH connections to my Instance
     type        = "ssh" 
     user        = "ubuntu"
